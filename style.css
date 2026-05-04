@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', 'Segoe UI', sans-serif;
+    line-height: 1.65;
+    color: #4a342a;
+    background: #fff4e3;            
+    padding: 18px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 18px 10px 6px;
+    margin-bottom: 18px;
+}
+
+.page-header h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    color: #b8482e;
+    font-weight: 700;
+    transform: rotate(-1.5deg);     /* slight tilt — friendly, not polished */
+}
+
+.page-header h1::after {
+    content: " 🍲";
+}
+
+/* ---- Main layout uses Grid ---- */
+.recipe-card {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 20px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.recipe-intro {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.recipe-intro h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 2.2rem;
+    color: #c0392b;
+    margin-bottom: 6px;
+}
+
+.recipe-intro p {
+    color: #6b4423;
+    font-style: italic;
+    margin: 8px auto 14px;
+    max-width: 620px;
+}
+
+.hero-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 380px;
+    padding: 8px 8px 40px;
+    background: #fffdf7;
+    border: 1px solid #e8d6b8;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+
+.ingredients,
+.steps,
+#notes,
+.cta {
+    padding: 18px 22px;
+    border-radius: 14px;
+}
+
+.ingredients {
+    background: #fff;
+    border: 2px dotted #d97f4a;
+}
+
+.steps {
+    background: #fff;
+    border: 2px dotted #b8482e;
+}
+
+#notes,
+.cta {
+    grid-column: 1 / -1;
+}
+
+#notes {
+    background: #fff8dc;
+    border: 2px dotted #d4a017;
+}
+
+/* ---- Headings ---- */
+h3 {
+    font-family: 'Caveat', cursive;
+    color: #b8482e;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* ---- Lists ---- */
+ul, ol {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.ingredients ul {
+    list-style: '🥄  ';             
+}
+.ingredients ul ul {
+    list-style: '•  ';
+    margin-top: 4px;
+}
+
+.step-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.step-list > li {
+    margin-bottom: 16px;
+}
+
+.step-list > li > strong {
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+    font-size: 1.35rem;
+    color: #b8482e;
+    margin-bottom: 4px;
+    border-bottom: 2px wavy #d97f4a;
+    padding-bottom: 2px;
+}
+
+.step-list ol {
+    margin-top: 6px;
+    padding-left: 26px;
+}
+
+.step-list ol li {
+    padding: 2px 0;
+    transition: color 0.2s ease;
+}
+
+.step-list ol li:hover {
+    color: #b8482e;
+}
+
+mark {
+    background: #ffe066;
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+/* ---- CTA ---- */
+.cta {
+    text-align: center;
+    background: #fff;
+    border: 2px dotted #b8482e;
+}
+
+.cta p {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #6b4423;
+}
+
+.recipe-btn {
+    background: #b8482e;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.recipe-btn:hover {
+    background: #d97f4a;
+    transform: rotate(-1deg);
+}
+
+
+.page-footer {
+    text-align: center;
+    margin-top: 22px;
+    padding: 12px;
+    color: #8a6a55;
+    font-size: 0.9rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 720px) {
+    .recipe-card {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+}

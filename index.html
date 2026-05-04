@@ -4,89 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
+    <!-- Casual handwritten + readable body fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <!-- External stylesheet link (Criterion 1) -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        Divine's Recipe Book
-    </h1>
-    <h2><u>Jollof Rice</u></h2>
-    <p><em>This is a recipe book on how to prepare the very common and delicious party Jollof Rice. A picture below:</em></p>
-    <img src="Jollof.jpeg" alt="Picture of Jollof rice" width="400">
-    <h3>Ingredients to create this tasty meal:</h3>
-    <ul>
-        <li>Rice(Long Grain/ Basmati rice)</li>
-        <li>Meat: Chicken/Beef/Fish/Turkey (Anyone goes)</li>
-        <li>Tomato/Pepper Blend</li>
-        <li>Seasoning:
-            <ul>
-                <li>Salt</li>
-                <li>Maggi:(Beef bouillon cubes)</li>
-                <li>Thyme</li>
-                <li>Curry Powder</li>
-                <li>Bay Leaves</li>
-            </ul>
-        </li>
-        <li>Vegetables:
-            <ul>
-                <li>Onions</li>
-                <li>Carrots</li>
-                <li>Green Peas</li>
-            </ul>
-        </li>
-        <li>Oil: (Any cooking oil)</li>
-        <li>Stock(beef)</li>
-        <li>Tomato Paste</li>
-    </ul>
-<h3>Steps to prepare Jollof Rice:</h3>
-<ul>
-    <li>
-        <strong>Prep the pepper mix:</strong>
-       <ol>
-            <li>Wash the tomatoes, bell peppers, onions, and scotch bonnet.</li>
-            <li>Remove the seeds from the peppers, then cut into smaller chunks.</li>
-            <li>Cut the tomatoes and onion into quarters.</li>
-            <li>If you prefer less heat, remove the seeds from the scotch bonnet or skip it completely.</li>
-            <li>Place all the vegetables in a wide baking dish.</li>
-            <li>Cut a garlic bulb in half and place one half cut side down.</li>
-            <li>Add fresh or dried thyme and drizzle lightly with oil.</li>
-            <li>Roast for 20 to 30 minutes, turning halfway so it does not burn.</li>
-            <li>Let the vegetables cool slightly, transfer to a blender, press out the soft garlic, and blend until smooth.</li>
-            <li>If you do not have an oven, see <mark>Notes</mark> for how to make the pepper mix on the stove.</li>
-           </ol>
-    </li>
-    <li>
-        <strong>Cook the beef:</strong>
-        <ol>
-            <li> Cut the beef into chunks and place in a pot.</li>
-            <li>Season with salt, curry powder, bouillon, thyme, and sliced onions.</li>
-            <li>Add about ¼ cup of water, cover, and cook for 10 minutes.</li>
-            <li>Add a little more water and continue cooking for another 15 minutes or until the beef softens.</li>
-            <li>Separate the beef from the stock and save the stock for later.</li>
-            <li>Heat oil in a large pot and fry the cooked beef until browned.</li>
-            <li>While the meat is frying, prep the remaining ingredients by opening the tomato paste, measuring the spices, and chopping the onions.</li>
-</ol>
-    </li>
-    <li>
-        <strong>Make the Base and Cook the Rice:</strong>
-        <ol>
-           <li> Reduce the oil from frying the meat, then add the chopped onions and fry for a few minutes.
-<li> Add the tomato paste and fry for about 15 minutes until it darkens and looks slightly grainy.
-<li>Pour in the blended pepper mix and stir well.
-<li>Season with salt, crushed bouillon, thyme, curry powder, and add the bay leaf.
-<li>Add the beef stock and half the water. Cover and simmer for 5 to 10 minutes.
-<li>While it simmers, wash the rice several times until the water runs clear.
-<li>Drain well, then add the rice to the pot and stir to coat it in the sauce.
-<li>Add the remaining water. The water should sit just slightly above the rice.
-<li>Cover the pot with foil, then place the lid on top.
-<li>Cook on low or medium low heat for 35 to 40 minutes.
-<li>When it is done, stir gently, fluff the rice, and serve warm.</li>
-        </ol>
-    </li>
-</ul>
+    <header class="page-header">
+        <h1>Divine's Recipe Book</h1>
+    </header>
 
-<h3>NOTES:</h3>
-<p><strong>To make the pepper mix without an oven:</strong></p>
-<p>If you do not have an oven or prefer not to use one, rinse and blend all the vegetables raw. Pour the blend into a pot and cook on high heat for about 40 minutes, stirring occasionally, until the water reduces and the mix becomes thick and concentrated.</p><br>
-To know more about the recipe, you can check out this <br> <a href="https://kikifoodies.com/recipes/simple-nigerian-jollof-rice-recipe-video/"><button>Recipe Page</button></a>
+    <main class="recipe-card">
+        <section class="recipe-intro">
+            <h2><u>Jollof Rice</u></h2>
+            <p><em>This is a recipe book on how to prepare the very common and delicious party Jollof Rice. A picture below:</em></p>
+            <img class="hero-image" src="Jollof.jpeg" alt="Picture of Jollof rice">
+        </section>
+
+        <section class="ingredients">
+            <h3>Ingredients to create this tasty meal:</h3>
+            <ul>
+                <li>Rice(Long Grain/ Basmati rice)</li>
+                <li>Meat: Chicken/Beef/Fish/Turkey (Anyone goes)</li>
+                <li>Tomato/Pepper Blend</li>
+                <li>Seasoning:
+                    <ul>
+                        <li>Salt</li>
+                        <li>Maggi:(Beef bouillon cubes)</li>
+                        <li>Thyme</li>
+                        <li>Curry Powder</li>
+                        <li>Bay Leaves</li>
+                    </ul>
+                </li>
+                <li>Vegetables:
+                    <ul>
+                        <li>Onions</li>
+                        <li>Carrots</li>
+                        <li>Green Peas</li>
+                    </ul>
+                </li>
+                <li>Oil: (Any cooking oil)</li>
+                <li>Stock(beef)</li>
+                <li>Tomato Paste</li>
+            </ul>
+        </section>
+
+        <section class="steps">
+            <h3>Steps to prepare Jollof Rice:</h3>
+            <ul class="step-list">
+                <li>
+                    <strong>Prep the pepper mix:</strong>
+                    <ol>
+                        <li>Wash the tomatoes, bell peppers, onions, and scotch bonnet.</li>
+                        <li>Remove the seeds from the peppers, then cut into smaller chunks.</li>
+                        <li>Cut the tomatoes and onion into quarters.</li>
+                        <li>If you prefer less heat, remove the seeds from the scotch bonnet or skip it completely.</li>
+                        <li>Place all the vegetables in a wide baking dish.</li>
+                        <li>Cut a garlic bulb in half and place one half cut side down.</li>
+                        <li>Add fresh or dried thyme and drizzle lightly with oil.</li>
+                        <li>Roast for 20 to 30 minutes, turning halfway so it does not burn.</li>
+                        <li>Let the vegetables cool slightly, transfer to a blender, press out the soft garlic, and blend until smooth.</li>
+                        <li>If you do not have an oven, see <mark>Notes</mark> for how to make the pepper mix on the stove.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Cook the beef:</strong>
+                    <ol>
+                        <li>Cut the beef into chunks and place in a pot.</li>
+                        <li>Season with salt, curry powder, bouillon, thyme, and sliced onions.</li>
+                        <li>Add about ¼ cup of water, cover, and cook for 10 minutes.</li>
+                        <li>Add a little more water and continue cooking for another 15 minutes or until the beef softens.</li>
+                        <li>Separate the beef from the stock and save the stock for later.</li>
+                        <li>Heat oil in a large pot and fry the cooked beef until browned.</li>
+                        <li>While the meat is frying, prep the remaining ingredients by opening the tomato paste, measuring the spices, and chopping the onions.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Make the Base and Cook the Rice:</strong>
+                    <ol>
+                        <li>Reduce the oil from frying the meat, then add the chopped onions and fry for a few minutes.</li>
+                        <li>Add the tomato paste and fry for about 15 minutes until it darkens and looks slightly grainy.</li>
+                        <li>Pour in the blended pepper mix and stir well.</li>
+                        <li>Season with salt, crushed bouillon, thyme, curry powder, and add the bay leaf.</li>
+                        <li>Add the beef stock and half the water. Cover and simmer for 5 to 10 minutes.</li>
+                        <li>While it simmers, wash the rice several times until the water runs clear.</li>
+                        <li>Drain well, then add the rice to the pot and stir to coat it in the sauce.</li>
+                        <li>Add the remaining water. The water should sit just slightly above the rice.</li>
+                        <li>Cover the pot with foil, then place the lid on top.</li>
+                        <li>Cook on low or medium low heat for 35 to 40 minutes.</li>
+                        <li>When it is done, stir gently, fluff the rice, and serve warm.</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+        <section id="notes">
+            <h3>NOTES:</h3>
+            <p><strong>To make the pepper mix without an oven:</strong></p>
+            <p>If you do not have an oven or prefer not to use one, rinse and blend all the vegetables raw. Pour the blend into a pot and cook on high heat for about 40 minutes, stirring occasionally, until the water reduces and the mix becomes thick and concentrated.</p>
+        </section>
+
+        <section class="cta">
+            <p>To know more about the recipe, you can check out this</p>
+            <a href="https://kikifoodies.com/recipes/simple-nigerian-jollof-rice-recipe-video/">
+                <button class="recipe-btn">Recipe Page</button>
+            </a>
+        </section>
+    </main>
+
+    <!-- <footer class="page-footer">
+        <p>&copy; Divine's Recipe Book</p>
+    </footer> -->
 </body>
 </html>
