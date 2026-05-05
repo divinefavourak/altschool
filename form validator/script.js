@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            errors.push('Email must follow a valid email format (e.g., example@domain.com).');
+            errors.push('Email not correct');
         }
 
         // Password validation
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Handle errors or success
         if (errors.length > 0) {
-            errors.forEach(error => alert(error));
+            alert(errors.join('\n'));
         } else {
             alert('Form submitted successfully!');
             // Submit the form
